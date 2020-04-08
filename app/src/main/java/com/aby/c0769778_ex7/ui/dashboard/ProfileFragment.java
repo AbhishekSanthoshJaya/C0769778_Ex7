@@ -23,15 +23,16 @@ public class ProfileFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(ProfileViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        View root = inflater.inflate(R.layout.fragment_profile, container, false);
         final TextView textView = root.findViewById(R.id.text_profile);
         final ImageView imageView = root.findViewById(R.id.imageView);
+        final TextView textDate = root.findViewById(R.id.txtDate);
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText("STUDENT PROFILE");
-                imageView.setImageResource(R.drawable.ic_dashboard_black_24dp);
-
+                imageView.setImageResource(R.drawable.ic_launcher_background);
+                textDate.setText("April 18, 1995");
 
             }
         });

@@ -9,17 +9,17 @@
         android:id="@+id/navigation_android"
         android:name="com.aby.c0769778_ex7.ui.home.AndroidFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_android" />
 
     <fragment
         android:id="@+id/navigation_studentProfile"
         android:name="com.aby.c0769778_ex7.ui.dashboard.ProfileFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_aboutUs"
         android:name="com.aby.c0769778_ex7.ui.notifications.AboutUsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_abousus" />
 </navigation>
